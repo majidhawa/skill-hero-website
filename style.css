@@ -1,0 +1,60 @@
+.topnav {
+    overflow: hidden;
+  
+  }
+  
+  .topnav a {
+    float: right;
+    color: gray;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: rgb(202, 40, 94);
+    color: pink;
+  }
+  
+ #hover{
+    color: rgb(223, 38, 69);
+ }
+  .topnav a.split {
+    float: left;
+
+    color: white;
+  }
+  button {
+    border: none;
+    padding: 10px 25px;
+    color: white;
+    background-color:rgb(224, 13, 83);
+    text-align: center;
+    border-radius: 20px;
+    float: right;
+  }
+  #button2 {
+    padding: 10px 25px;
+    color: palevioletred;
+    background-color:white;
+    text-align: center;
+    border-radius:   20px;
+    border: solid rgb(223, 38, 69);
+    float: right;
+
+  }
+  #logo{
+    color: red;
+  }
+  #skill{
+    color: grey;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }}
