@@ -1,6 +1,7 @@
 .navbar {
     overflow: hidden;
     padding-right: 250px;
+    justify-content: space-between;
   
   }
 
@@ -10,7 +11,7 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
   
   }
   
@@ -28,12 +29,12 @@
     color: white;
   }
   button {
-    border: none;
-    padding: 10px 25px;
+    border: solid rgb(223, 38, 69) ;
+    padding: 10px 20px;
     color: white;
     background-color:rgb(224, 13, 83);
     text-align: center;
-    border-radius: 20px;
+    border-radius: 25px;
     float: right;
     margin-top: 5px;
   }
@@ -53,80 +54,78 @@
   }
   #skill{
     color: grey;
+    
   }
   
   .landingpage{
     display: flex;
     flex: auto auto;
-    gap: 10%;
+    justify-content: space-around;
+    
+    
+   
   }
-  #h1{
+  #headings{
     color: rgb(49, 49, 82);
-   font-size: 70px;
+   font-size: 60px;
   }
-  #p1{
+  #inlinetext{
     color: rgb(223, 38, 69);
   
   }
-  #p2{
+  #additiontext{
     color: gray;
-    font-size: 25px;
+    font-size: 20px;
 
   }
-  #explore{
-      display: flex;
-      gap: 5%;
-      background-color: aliceblue;
-      border: solid grey;
-      border-radius: 50px;
-      width: 500px;
-      height: 50px;  
-  }
-  #explorebutton {
-    padding: 15px 30px;
-    color: white;
-    background-color:rgb(223, 38, 69);
-    text-align: center;
-    border-radius:   35px;
-    display: inline-block;
-    margin-left: 25px;
+  
 
-  }
- 
-  #menu-toggle{
-    display:none;
-  }
   #heroimg{
     width: 500px;
     height: 400px;
     border-radius: 500px;
   }
   .landingpageimage{
-    margin-top: 100px;
-  }
-  .landingpagetext{
-    margin-left: 200px;
-  }
+    margin-top: 50px;
+    margin-right: 200px;
+  } 
   .socials{
     display: flex;
-    flex: auto auto auto auto auto;
-    gap: 10%;
-    margin-left: 200px;
-  }
- 
-  @media screen and (max-width: 400px) {
-    .navbar.responsive {position: relative;
-      display: none;}
-    .navbar.responsive .icon {
-      display: none;
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .burger-icon {
-      display: block;
-    }
+    justify-content: space-around;
+    margin: 4%;
     
+  }
+  .landingpagetext{
+    margin-left: 100px;
+    margin-top: 50px;
+  }
+  .explore{
+    position: relative;
+    display:inline-table
+  }
+  .explore input {
+    padding-right: 40px;
+    border-radius: 21px;
+    padding: 10px 10px;
+    width: 150%;
+    border: grey 1px solid;
+}
+.explore button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    background-color: #E82F4E;
+    color: white;
+    border-radius: 19px;
+    padding: 10px 1px;
+    transform: translate(159%,-12%);
+    font-size: 84%;
+}
+ 
+  @media only screen and  (min-width:200px) and (max-width: 400px) {
     
     .landingpage{
       flex-wrap: wrap;
@@ -145,7 +144,7 @@
     }
     #p2{
       color: gray;
-      font-size: 18px;
+      font-size: 15px;
   
     }
     #heroimg{
@@ -157,29 +156,247 @@
     flex-wrap: wrap;
       margin-left: 0px;
     }
-   
-
-    #menu-toggle{
-      display:none;
-    }
-    .hamburger-menu{
-      cursor: pointer;
+    .explore{
+      position: relative;
       display: inline-block;
+    }
+    .explore input {
+      padding-right: 40px;
+      border-radius: 21px;
+      padding: 10px 10px;
+      width: 150%;
+      border: grey 1px solid;
+  }
+  .explore button {
       position: absolute;
-      top: 10px;
-      right: 10px;
-      z-index: 1000;
+      top: 0;
+      right: 0;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      background-color: #E82F4E;
+      color: white;
+      border-radius: 19px;
+      padding: 13px 1px;
+      transform: translate(169%,-1%);
+      font-size: 84%;
+  }
+   
+ 
+  }
+   
+  @media only screen and  (min-width:400px)  and (max-width: 600px){
+  
+    
+    .landingpage{
+      flex-wrap: wrap;
     }
-    .hamburger-menu div{
-      width: 25px;
-      height: 2px;
-      background-color: #333;
-      margin: 4px 0;
+    .landingpagetext{
+      margin-left: 0px;
+      
     }
-    #menu-toggle:checked ~ .nav.links{
-      display: block;
-      display: none;
+    #headings{
+      color: rgb(49, 49, 82);
+     font-size: 40px;
+    }
+    #inlinetext{
+      color: rgb(223, 38, 69);
+    
+    }
+    #additiontext{
+      color: gray;
+      font-size: 15px;
+  
+    }
+    #heroimg{
+      width: 250px;
+      height: 300px;
+      border-radius: 500px;
+    }
+    .socials{
+    flex-wrap: wrap;
+      margin-left: 0px;
+    }
+    .explore{
+      position: relative;
+      display: inline-block;
+    }
+    .explore input {
+      padding-right: 40px;
+      border-radius: 21px;
+      padding: 10px 10px;
+      width: 150%;
+      border: grey 1px solid;
+  }
+  .explore button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      background-color: #E82F4E;
+      color: white;
+      border-radius: 19px;
+      padding: 13px 1px;
+      transform: translate(169%,-1%);
+      font-size: 84%;
+  }
+  }
+  @media only screen and  (min-width:600px) and (max-width: 800px) {
+    .navbar {
+      overflow: hidden;
+      padding-right: 250px;
+      justify-content: space-between;
+    
+    }
+  
+    .navbar a {
+      float: right;
+      color: gray;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 20px;
+    
     }
     
-  }
+    .navbar a:hover {
+      background-color: rgb(202, 40, 94);
+      color: pink;
+    }
+    .landingpage{
+      flex-wrap: wrap;
+    }
+    .landingpagetext{
+      margin-left: 0px;
+      
+    }
+    #h1{
+      color: rgb(49, 49, 82);
+     font-size: 40px;
+    }
+    #p1{
+      color: rgb(223, 38, 69);
+    
+    }
+    #p2{
+      color: gray;
+      font-size: 15px;
   
+    }
+    #heroimg{
+      width: 250px;
+      height: 300px;
+      border-radius: 500px;
+    }
+    .socials{
+    flex-wrap: wrap;
+      margin-left: 0px;
+    }
+    .explore{
+      position: relative;
+      display: inline-block;
+    }
+    .explore input {
+      padding-right: 40px;
+      border-radius: 21px;
+      padding: 10px 10px;
+      width: 150%;
+      border: grey 1px solid;
+  }
+  .explore button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      background-color: #E82F4E;
+      color: white;
+      border-radius: 19px;
+      padding: 13px 1px;
+      transform: translate(169%,-1%);
+      font-size: 84%;
+  }
+
+  }
+  @media only screen and  (min-width:800px) and (max-width: 1000px) {
+    .navbar {
+      overflow: hidden;
+      padding-right: 250px;
+      justify-content: space-between;
+    
+    }
+  
+    .navbar a {
+      float: right;
+      color: gray;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 20px;
+    
+    }
+    
+    .navbar a:hover {
+      background-color: rgb(202, 40, 94);
+      color: pink;
+    }
+    .landingpage{
+      flex-wrap: wrap;
+    }
+    .landingpagetext{
+      margin-left: 0px;
+      
+    }
+    #h1{
+      color: rgb(49, 49, 82);
+     font-size: 40px;
+    }
+    #p1{
+      color: rgb(223, 38, 69);
+    
+    }
+    #p2{
+      color: gray;
+      font-size: 15px;
+  
+    }
+    #heroimg{
+      width: 250px;
+      height: 300px;
+      border-radius: 500px;
+    }
+    .socials{
+    flex-wrap: wrap;
+      margin-left: 0px;
+    }
+    .explore{
+      position: relative;
+      display: inline-block;
+    }
+    .explore input {
+      padding-right: 40px;
+      border-radius: 21px;
+      padding: 10px 10px;
+      width: 150%;
+      border: grey 1px solid;
+  }
+  .explore button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      background-color: #E82F4E;
+      color: white;
+      border-radius: 19px;
+      padding: 13px 1px;
+      transform: translate(169%,-1%);
+      font-size: 84%;
+  }
+
+  }
+ 
